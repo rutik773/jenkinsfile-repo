@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') { // Define a stage
             steps {
-                echo 'Pulling...' // Steps to execute
+                git branch: 'main', url: 'https://github.com/iamtruptimane/Terraform-projects.git'
             }
         }
         stage('build') {
